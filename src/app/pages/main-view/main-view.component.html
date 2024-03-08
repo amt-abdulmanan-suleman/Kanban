@@ -8,12 +8,12 @@
     </div>
     <div class="board">
         <div class="board-bar">
-            <p class="board-name">Board Name</p>
+            <p class="board-name" i18n>Board Name</p>
         </div>
         <div class="board-wrapper">
             <div class="board-columns" cdkDropListGroup>
                 <div class="board-column" *ngFor="let item of tasks.columns" >
-                    <div class="column-title">{{item.title}}</div>
+                    <div class="column-title" i18n>{{item.title}}</div>
                     <div class="task-container" cdkDropList #todoList="cdkDropList" [cdkDropListData]="item.tasks" (cdkDropListDropped)="drop($event)">
                         @for(item of item.tasks; track item){<div class="task" cdkDrag>
                            {{item}}
