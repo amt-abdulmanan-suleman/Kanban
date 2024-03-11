@@ -1,6 +1,25 @@
 export const dummyData = {
     columns: [
       {
+        title: "Ideas",
+        tasks: [
+          "Brainstorm new project ideas",
+          "Research market trends",
+          "Explore potential collaborations",
+          "Create mind maps",
+
+        ]
+      },
+       {
+        title: "Research",
+        tasks: [
+          "Investigate best practices",
+          "Study market trends",
+          "Analyze competitors",
+          "Conduct user surveys",
+        ]
+      },
+      {
         title: "Todos",
         tasks: [
           "Prepare breakfast",
@@ -18,26 +37,7 @@ export const dummyData = {
           "File expense reports",
           "Update project status",
         ]
-      },
-      {
-        title: "Ideas",
-        tasks: [
-          "Brainstorm new project ideas",
-          "Research market trends",
-          "Explore potential collaborations",
-          "Create mind maps",
-
-        ]
-      },
-      {
-        title: "Research",
-        tasks: [
-          "Investigate best practices",
-          "Study market trends",
-          "Analyze competitors",
-          "Conduct user surveys",
-        ]
-      }
+      }, 
     ]
   };
   
