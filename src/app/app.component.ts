@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { Component, OnInit} from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Observable, map, take } from 'rxjs';
 
@@ -12,7 +12,6 @@ import { Observable, map, take } from 'rxjs';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit {
-
   constructor( private http: HttpClient){}
   todos$: Observable<any> | undefined
   

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import {
   CdkDragDrop,
   CdkDrag,
@@ -24,9 +24,13 @@ interface  DummyData{
   templateUrl: './main-view.component.html',
   styleUrl: './main-view.component.scss'
 })
-export class MainViewComponent {
+export class MainViewComponent implements OnChanges {
+  @Input()
   tasks = dummyData
 
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log("changes")
+  }
 
   drop(event: any) {
     if (event.previousContainer === event.container) {
